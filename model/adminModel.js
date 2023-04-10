@@ -30,7 +30,7 @@ const adminSchema=mongoose.Schema({
 
 const genAuthToken=(id)=>{
 
-    return jwt.sign({id},process.env.ADMIN_SECRET_CODE)
+    return jwt.sign({id},process.env.SECRET_CODE)
 }
 
 const Admin=mongoose.model("admin",adminSchema);
