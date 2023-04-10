@@ -35,5 +35,5 @@ app.use("/logIn",loginRouter)
 app.use("/adminSignUp",adminSignupRouter);
 app.use("/adminLogIn",adminLoginRouter)
 app.use("/history",isSignedIn,historyRoute)
-app.use("/goldData",isSignedIn,goldRouter)
+app.use("/goldData",isSignedInAdmin,goldRouter)
 app.use("/forgetpassword",forgetPasswordRouter)
